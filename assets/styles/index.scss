@@ -1,0 +1,49 @@
+@import "./common";
+
+.loading {
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f4000a;
+    transition: opacity 0.5s;
+
+    &.hide {
+        opacity: 0 !important;
+        z-index: -1;
+    }
+
+    svg {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        animation: dash-loader 1.2s linear infinite;
+        fill: #fff;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 100;
+        stroke-width: 0.05rem;
+        stroke: #fff;
+    }
+}
+
+@keyframes dash-loader {
+    0% {
+        fill: transparent;
+    }
+
+    50%,
+    60% {
+        fill: transparent;
+        stroke-dasharray: 523 200;
+    }
+
+    to {
+        stroke: transparent;
+        stroke-dasharray: 523 200;
+    }
+}
