@@ -123,7 +123,7 @@ main {
         }
     }
 
-    .campaign-container {
+    section.campaign-container {
         background-color: #f3f3f3;
 
         .card-list {
@@ -164,6 +164,179 @@ main {
                         font-weight: 500;
                     }
                 }
+            }
+        }
+    }
+
+    section.event-container {
+        background-image: url(/assets/images/product-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        padding-bottom: 128px;
+
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .carousel-swiper {
+            margin-right: 80px;
+            width: 50%;
+            float: left;
+
+            .swiper-slide {
+                width: 323px;
+                opacity: 0;
+
+                &-prev,
+                &-active,
+                &-next {
+                    opacity: 1;
+                }
+
+                img {
+                    display: block;
+                }
+            }
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                background-color: rgba(0, 0, 0, 0.4);
+                width: 38px;
+                height: 38px;
+                border-radius: 50%;
+                color: #fff;
+
+                &::after {
+                    font-size: 18px;
+                }
+            }
+
+            .swiper-button-next::after {
+                margin-right: -4px;
+            }
+            .swiper-button-prev::after {
+                margin-left: -4px;
+            }
+
+            .swiper-pagination {
+                top: calc(100% + 28px);
+
+                &-bullet {
+                    width: 12px;
+                    height: 12px;
+                    margin: 0 6px !important;
+                    opacity: 1;
+                    background-color: #bebebe;
+                }
+
+                &-bullet-active {
+                    background-color: #db3535;
+                }
+            }
+        }
+
+        .event-content {
+            h2 {
+                font-size: 48px;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 24px;
+                margin: 8px 0 12px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                color: #fff;
+                background-color: #000;
+                display: block;
+                width: 175px;
+                height: 48px;
+                border-radius: 24px;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                margin-top: 32px;
+                transition: transform 0.5s;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+
+    section.youtube-container {
+        background-color: #f3f3f3;
+        .carousel-swiper {
+            .swiper-slide {
+                position: relative;
+                width: 790px;
+                height: 420px;
+                opacity: 0;
+
+                &-prev,
+                &-active,
+                &-next {
+                    opacity: 1;
+                }
+
+                img {
+                    display: block;
+                    border-radius: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    opacity: 1;
+                    transition: opacity 0.5s;
+                }
+                iframe {
+                    border-radius: 16px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    opacity: 0;
+                    transition: opacity 0.5s;
+                }
+
+                &-active:hover {
+                    img {
+                        opacity: 0;
+                        z-index: 0;
+                    }
+
+                    iframe {
+                        opacity: 1;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+        button {
+            color: #fff;
+            background-color: #000;
+            display: block;
+            margin: 0 auto;
+            width: 175px;
+            height: 48px;
+            border-radius: 24px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 32px;
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: translateY(-5px);
             }
         }
     }

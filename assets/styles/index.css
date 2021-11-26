@@ -222,11 +222,11 @@ main .product-container .card-list .card-item img {
   width: 100%;
 }
 
-main .campaign-container {
+main section.campaign-container {
   background-color: #f3f3f3;
 }
 
-main .campaign-container .card-list {
+main section.campaign-container .card-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,41 +235,219 @@ main .campaign-container .card-list {
           justify-content: space-between;
 }
 
-main .campaign-container .card-list .card-item {
+main section.campaign-container .card-list .card-item {
   width: 100%;
   text-decoration: none;
   color: #000;
   margin-left: 30px;
 }
 
-main .campaign-container .card-list .card-item img {
+main section.campaign-container .card-list .card-item img {
   width: 100%;
   height: 280px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-main .campaign-container .card-list .card-item .card-content {
+main section.campaign-container .card-list .card-item .card-content {
   padding: 20px 16px;
 }
 
-main .campaign-container .card-list .card-item .card-content h2 {
+main section.campaign-container .card-list .card-item .card-content h2 {
   margin: 8px 0;
   font-size: 20px;
 }
 
-main .campaign-container .card-list .card-item .card-content p.desc {
+main section.campaign-container .card-list .card-item .card-content p.desc {
   margin: 0;
   font-size: 12px;
   color: #666;
 }
 
-main .campaign-container .card-list .card-item .card-content p.date {
+main section.campaign-container .card-list .card-item .card-content p.date {
   text-align: right;
   color: #e02020;
   margin: 18px 0 0;
   font-size: 12px;
   font-weight: 500;
+}
+
+main section.event-container {
+  background-image: url(/assets/images/product-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-bottom: 128px;
+}
+
+main section.event-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+main section.event-container .carousel-swiper {
+  margin-right: 80px;
+  width: 50%;
+  float: left;
+}
+
+main section.event-container .carousel-swiper .swiper-slide {
+  width: 323px;
+  opacity: 0;
+}
+
+main section.event-container .carousel-swiper .swiper-slide-prev, main section.event-container .carousel-swiper .swiper-slide-active, main section.event-container .carousel-swiper .swiper-slide-next {
+  opacity: 1;
+}
+
+main section.event-container .carousel-swiper .swiper-slide img {
+  display: block;
+}
+
+main section.event-container .carousel-swiper .swiper-button-next,
+main section.event-container .carousel-swiper .swiper-button-prev {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+main section.event-container .carousel-swiper .swiper-button-next::after,
+main section.event-container .carousel-swiper .swiper-button-prev::after {
+  font-size: 18px;
+}
+
+main section.event-container .carousel-swiper .swiper-button-next::after {
+  margin-right: -4px;
+}
+
+main section.event-container .carousel-swiper .swiper-button-prev::after {
+  margin-left: -4px;
+}
+
+main section.event-container .carousel-swiper .swiper-pagination {
+  top: calc(100% + 28px);
+}
+
+main section.event-container .carousel-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 6px !important;
+  opacity: 1;
+  background-color: #bebebe;
+}
+
+main section.event-container .carousel-swiper .swiper-pagination-bullet-active {
+  background-color: #db3535;
+}
+
+main section.event-container .event-content h2 {
+  font-size: 48px;
+  margin: 0;
+}
+
+main section.event-container .event-content h3 {
+  font-size: 24px;
+  margin: 8px 0 12px;
+}
+
+main section.event-container .event-content p {
+  font-size: 14px;
+}
+
+main section.event-container .event-content button {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  width: 175px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main section.event-container .event-content button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+main section.youtube-container {
+  background-color: #f3f3f3;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide {
+  position: relative;
+  width: 790px;
+  height: 420px;
+  opacity: 0;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide-prev, main section.youtube-container .carousel-swiper .swiper-slide-active, main section.youtube-container .carousel-swiper .swiper-slide-next {
+  opacity: 1;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide img {
+  display: block;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 1;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide iframe {
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide-active:hover img {
+  opacity: 0;
+  z-index: 0;
+}
+
+main section.youtube-container .carousel-swiper .swiper-slide-active:hover iframe {
+  opacity: 1;
+  z-index: 1;
+}
+
+main section.youtube-container button {
+  color: #fff;
+  background-color: #000;
+  display: block;
+  margin: 0 auto;
+  width: 175px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main section.youtube-container button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .loading {
