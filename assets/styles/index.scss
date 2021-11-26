@@ -340,6 +340,43 @@ main {
             }
         }
     }
+
+    section.coupon-container {
+        background-image: url(/assets/images/coupon-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 443px;
+
+        h1 {
+            color: #db3535;
+            margin: 0;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+            font-size: 48px;
+            margin: 24px 0;
+        }
+
+        button {
+            color: #fff;
+            background-color: #db3535;
+            display: block;
+            margin: 0 auto;
+            width: 175px;
+            height: 48px;
+            border-radius: 24px;
+            border: none;
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 32px;
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
 }
 
 .loading {

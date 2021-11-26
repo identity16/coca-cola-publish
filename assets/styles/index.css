@@ -450,6 +450,48 @@ main section.youtube-container button:hover {
           transform: translateY(-5px);
 }
 
+main section.coupon-container {
+  background-image: url(/assets/images/coupon-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 443px;
+}
+
+main section.coupon-container h1 {
+  color: #db3535;
+  margin: 0;
+}
+
+main section.coupon-container h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+  margin: 24px 0;
+}
+
+main section.coupon-container button {
+  color: #fff;
+  background-color: #db3535;
+  display: block;
+  margin: 0 auto;
+  width: 175px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+main section.coupon-container button:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
 .loading {
   z-index: 999;
   opacity: 1;
