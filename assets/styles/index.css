@@ -4,6 +4,7 @@
 
 body {
   font-weight: 300;
+  line-height: 1.5;
   margin: 0;
   height: 200vh;
   background-color: #333;
@@ -121,6 +122,7 @@ main .hero-swiper .slide-content {
 main .hero-swiper .slide-content h1 {
   font-size: 56px;
   margin: 0;
+  text-align: left;
 }
 
 main .hero-swiper .slide-content p {
@@ -157,6 +159,64 @@ main .hero-swiper .swiper-pagination-bullet {
 
 main .hero-swiper .swiper-pagination-bullet-active {
   background-color: #db3535;
+}
+
+main > section[class$="-container"] {
+  padding-top: 120px;
+  padding-bottom: 88px;
+}
+
+main > section[class$="-container"] h1 {
+  font-size: 40px;
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+main .product-container {
+  background-image: url(/assets/images/product-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main .product-container h1 {
+  color: #fff;
+}
+
+main .product-container .card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .product-container .card-list .card-item {
+  display: block;
+  background-color: #fff;
+  margin-left: 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .product-container .card-list .card-item img {
+  display: block;
+  width: 100%;
+}
+
+main .product-container .card-list .card-item:first-child {
+  margin-left: 0;
+}
+
+main .product-container .card-list .card-item:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .loading {

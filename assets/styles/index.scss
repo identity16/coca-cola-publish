@@ -30,6 +30,7 @@ main {
             h1 {
                 font-size: 56px;
                 margin: 0;
+                text-align: left;
             }
 
             p {
@@ -64,6 +65,55 @@ main {
 
             &-bullet-active {
                 background-color: #db3535;
+            }
+        }
+    }
+
+    & > section[class$="-container"] {
+        padding-top: 120px;
+        padding-bottom: 88px;
+
+        h1 {
+            font-size: 40px;
+            margin: 0 0 60px;
+            text-align: center;
+        }
+    }
+
+    .product-container {
+        background-image: url(/assets/images/product-bg.jpg);
+        background-size: cover;
+        background-position: center;
+
+        h1 {
+            color: #fff;
+        }
+
+        .card-list {
+            display: flex;
+            justify-content: space-between;
+
+            .card-item {
+                display: block;
+                background-color: #fff;
+                margin-left: 16px;
+                border-radius: 16px;
+                overflow: hidden;
+                transition: transform 0.5s;
+                box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.2);
+
+                img {
+                    display: block;
+                    width: 100%;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
             }
         }
     }
