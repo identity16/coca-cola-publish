@@ -1,6 +1,76 @@
 @import "./common";
 
+main {
+    .hero-swiper {
+        position: relative;
+        overflow: hidden;
+        height: 620px;
+
+        .swiper-slide {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .slide-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slide-content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            width: 100%;
+
+            h1 {
+                font-size: 56px;
+                margin: 0;
+            }
+
+            p {
+                font-size: 24px;
+                margin: 12px 0 28px;
+            }
+
+            button {
+                box-sizing: border-box;
+                display: block;
+                background-color: transparent;
+                width: 176px;
+                height: 48px;
+                padding: 0;
+                border: solid 1px #fff;
+                border-radius: 24px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 500;
+            }
+        }
+
+        .swiper-pagination {
+            bottom: 20px;
+            &-bullet {
+                width: 12px;
+                height: 12px;
+                margin: 0 6px !important;
+                opacity: 1;
+                background-color: #fff;
+            }
+
+            &-bullet-active {
+                background-color: #db3535;
+            }
+        }
+    }
+}
+
 .loading {
+    z-index: 999;
     opacity: 1;
     position: fixed;
     top: 0;
