@@ -33,6 +33,7 @@ body {
 
 #gnb .gnb-logo {
   display: block;
+  height: 36px;
 }
 
 #gnb .gnb-menu {
