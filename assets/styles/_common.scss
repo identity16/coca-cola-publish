@@ -78,3 +78,50 @@ body {
         }
     }
 }
+
+#footer {
+    background-color: #000;
+    padding: 48px 0;
+    color: #fff;
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-list {
+        .social-item {
+            margin-left: 72px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .menu-list {
+        margin: 40px 0;
+
+        .menu-item {
+            margin-left: 32px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            a {
+                font-size: 14px;
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .copyright {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+}
