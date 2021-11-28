@@ -41,3 +41,23 @@ const swiperCarousel = new Swiper(".carousel-swiper", {
         el: ".swiper-pagination",
     },
 });
+
+const colaYears = [1899, 1900, 1915, 1916, 1957];
+const swiperStory = new Swiper(".story-swiper", {
+    loop: true,
+    effect: "fade",
+    fadeEffect: {
+        crossFade: true,
+    },
+    initialSlide: colaYears.length - 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: (idx, className) => {
+            return `<div class="${className}">
+                <img src="assets/images/small-cola-${colaYears[idx]}.png" alt="Cola ${colaYears[idx]}">
+                <p>${colaYears[idx]}</p>
+            </div>`;
+        },
+    },
+});

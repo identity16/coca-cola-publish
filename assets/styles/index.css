@@ -20,7 +20,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 999;
 }
 
 #gnb .wrapper {
@@ -164,10 +164,12 @@ main .hero-swiper .swiper-pagination-bullet-active {
 main > section[class$="-container"] {
   padding-top: 120px;
   padding-bottom: 88px;
+  overflow: hidden;
 }
 
 main > section[class$="-container"] h1 {
   font-size: 40px;
+  font-weight: 500;
   margin: 0 0 60px;
   text-align: center;
 }
@@ -201,6 +203,97 @@ main > section[class$="-container"] .card-list .card-item:first-child {
 main > section[class$="-container"] .card-list .card-item:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+main > .story-container {
+  background-color: #f3f3f3;
+}
+
+main > .story-container h1 {
+  margin: 0;
+}
+
+main > .story-container h2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 24px 0 32px;
+  color: #db3535;
+}
+
+main > .story-container .story-swiper {
+  overflow: hidden;
+}
+
+main > .story-container .story-swiper .swiper-slide {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main > .story-container .story-swiper .swiper-slide img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+main > .story-container .story-swiper .swiper-slide span {
+  font-size: 180px;
+  color: rgba(34, 34, 34, 0.6);
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -35%);
+          transform: translate(-50%, -35%);
+  z-index: 0;
+}
+
+main > .story-container .story-swiper .swiper-pagination {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 48px;
+}
+
+main > .story-container .story-swiper .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  margin: 0 20px;
+  background: none;
+  opacity: 1;
+}
+
+main > .story-container .story-swiper .swiper-pagination-bullet img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: #fff;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 16px;
+}
+
+main > .story-container .story-swiper .swiper-pagination-bullet p {
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
+main > .story-container .story-swiper .swiper-pagination-bullet-active img {
+  border: solid 2px #dd4f4f;
+}
+
+main > .story-container .story-swiper .swiper-pagination-bullet-active p {
+  font-weight: 500;
 }
 
 main .product-container {
