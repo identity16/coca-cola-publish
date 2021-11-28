@@ -37,6 +37,7 @@ body {
 
         &-item {
             margin: 0 32px;
+            position: relative;
 
             a {
                 font-size: 16px;
@@ -47,6 +48,48 @@ body {
             &.active {
                 a {
                     color: #e02020 !important;
+                }
+            }
+
+            &:hover {
+                a {
+                    color: #e02020 !important;
+                }
+
+                .gnb-sub-menu-list {
+                    display: block;
+                }
+            }
+
+            .gnb-sub-menu-list {
+                display: none;
+                margin: 0;
+                width: 140px;
+                padding: 8px 12px;
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+
+                list-style: none;
+                background-color: #fff;
+
+                border: solid 1px #ddd;
+                border-radius: 4px;
+                box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+
+                .gnb-sub-menu-item {
+                    a {
+                        display: block;
+                        padding: 8px 0;
+                        font-size: 14px;
+                        line-height: 1;
+                        color: #000 !important;
+
+                        &:hover {
+                            color: #e02020 !important;
+                        }
+                    }
                 }
             }
         }

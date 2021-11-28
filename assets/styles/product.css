@@ -45,6 +45,7 @@ body {
 
 #gnb .gnb-menu-item {
   margin: 0 32px;
+  position: relative;
 }
 
 #gnb .gnb-menu-item a {
@@ -54,6 +55,42 @@ body {
 }
 
 #gnb .gnb-menu-item.active a {
+  color: #e02020 !important;
+}
+
+#gnb .gnb-menu-item:hover a {
+  color: #e02020 !important;
+}
+
+#gnb .gnb-menu-item:hover .gnb-sub-menu-list {
+  display: block;
+}
+
+#gnb .gnb-menu-item .gnb-sub-menu-list {
+  display: none;
+  margin: 0;
+  width: 140px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.1);
+}
+
+#gnb .gnb-menu-item .gnb-sub-menu-list .gnb-sub-menu-item a {
+  display: block;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1;
+  color: #000 !important;
+}
+
+#gnb .gnb-menu-item .gnb-sub-menu-list .gnb-sub-menu-item a:hover {
   color: #e02020 !important;
 }
 
