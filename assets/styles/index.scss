@@ -213,12 +213,14 @@ main {
             justify-content: space-between;
 
             .card-item {
+                border-radius: 16px;
                 width: 100%;
                 text-decoration: none;
                 color: #000;
                 margin-left: 30px;
 
                 img {
+                    display: block;
                     width: 100%;
                     height: 280px;
                     object-fit: cover;
