@@ -114,7 +114,8 @@ body {
         }
     }
 
-    &.stuck {
+    &.stuck,
+    &.white {
         background-color: #fff;
         .gnb-menu-item a,
         .gnb-btn-item {

@@ -113,16 +113,17 @@ body {
   font-weight: bold;
 }
 
-#gnb.stuck {
+#gnb.stuck, #gnb.white {
   background-color: #fff;
 }
 
 #gnb.stuck .gnb-menu-item a,
-#gnb.stuck .gnb-btn-item {
+#gnb.stuck .gnb-btn-item, #gnb.white .gnb-menu-item a,
+#gnb.white .gnb-btn-item {
   color: #000;
 }
 
-#gnb.stuck .gnb-btn-primary {
+#gnb.stuck .gnb-btn-primary, #gnb.white .gnb-btn-primary {
   color: #fff;
 }
 
