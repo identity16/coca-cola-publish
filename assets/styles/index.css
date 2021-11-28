@@ -6,8 +6,6 @@ body {
   font-weight: 300;
   line-height: 1.5;
   margin: 0;
-  height: 200vh;
-  background-color: #333;
 }
 
 .wrapper {
@@ -53,6 +51,10 @@ body {
   font-size: 16px;
   color: #fff;
   text-decoration: none;
+}
+
+#gnb .gnb-menu-item.active a {
+  color: #e02020 !important;
 }
 
 #gnb .gnb-btn {
